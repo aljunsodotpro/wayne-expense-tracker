@@ -2,7 +2,7 @@
   <div class="col-12 col-lg-10 col-xl-8 mx-auto form-container">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><i class="fas fa-plus-circle"></i> Add {{type}}</h5>
+        <h5 class="card-title"><i class="fas fa-plus-circle"></i> Add {{#if (eq this.type 'expense')}}{{type}}s{{else}}income{{/if}}</h5>
         <hr>
 
         <form class="row g-3" action="/records" method="POST">

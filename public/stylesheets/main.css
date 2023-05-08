@@ -1,15 +1,18 @@
 header {
-  background-color: #1c3869;
+	background-color: #e0e007;
 }
 
+img.brand-logo {
+	max-width: 250px;
+}
 .container {
-  /* max-width: 720px; */
+	/* max-width: 720px; */
 }
 
 .navbar a {
-  color: white;
+	color: white;
 }
 
 .dropdown-menu a {
-  color: #1c3869;
+	color: #1c3869;
 }
