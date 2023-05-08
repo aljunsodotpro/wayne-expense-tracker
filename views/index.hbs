@@ -69,8 +69,7 @@
             </div>
             <div class="col-auto col-sm-12 d-flex flex-column justify-content-center align-items-center">
               <div class="d-flex align-items-center">
-                <i class="fas fa-dollar-sign fa-xs mr-1 "></i>
-                <span style="font-weight: 500;">{{ totalExpense }}</span>
+                <span style="font-weight: 500;">₱{{ totalExpense }}</span>
               </div>
               <div>
                 <span style="font-size: 0.9rem;font-weight: 500; color: #e84200ed;">
@@ -89,8 +88,7 @@
             </div>
             <div class="col-auto col-sm-12 d-flex flex-column justify-content-center align-items-center">
               <div class="d-flex align-items-center">
-                <i class="fas fa-dollar-sign fa-xs mr-1"></i>
-                <span style="font-weight: 500;">{{ totalAmount }}</span>
+                <span style="font-weight: 500;">₱{{ totalAmount }}</span>
               </div>
               <div>
                 <span style="font-size: 0.9rem;font-weight: 500; color: #3877e4">
@@ -109,12 +107,11 @@
             </div>
             <div class="col-auto col-sm-12 d-flex flex-column justify-content-center align-items-center">
               <div class="d-flex align-items-center">
-                <i class="fas fa-dollar-sign fa-xs mr-1"></i>
-                <span style="font-weight: 500;">{{ totalRevenue }}</span>
+                <span style="font-weight: 500;">₱{{ totalRevenue }}</span>
               </div>
               <div>
                 <span style="font-size: 0.9rem;font-weight: 500; color: #03bf7a">
-                  Revenues
+                  Income
                 </span>
               </div>
             </div>
@@ -158,7 +155,7 @@
                 <h6 style="font-size: 1rem; font-weight: 600">Monthly Limit</h6>
                 <div class="d-flex justify-content-center">
                   <div>
-                    <span>${{formattedBudget}}</span>
+                    <span>₱{{formattedBudget}}</span>
                   </div>
                   <!-- Button trigger modal -->
                   <div class="d-flex align-items-center">
@@ -200,7 +197,7 @@
               {{!-- Remaining --}}
               <div class="remaining-container px-2 pb-3 d-flex flex-column align-items-center">
                 <h6 style="font-size: 1rem; font-weight: 600">Remaining</h6>
-                <span>${{remaining}}</span>
+                <span>₱{{remaining}}</span>
 
               </div>
 
@@ -235,7 +232,7 @@
         {{!-- Amount --}}
         <div class="col-4 d-flex align-items-center justify-content-end">
           <div class="d-flex flex-column align-items-end">
-            <h5 class="record-amount">${{#if (eq this.type 'expense')}}-{{/if}}{{ this.amount }}</h5>
+            <h5 class="record-amount">₱{{#if (eq this.type 'expense')}}-{{/if}}{{ this.amount }}</h5>
             <small class="text-muted">{{this.merchant}}</small>
           </div>
 
